@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 
 // Decoradores en forma de anotación
 @WebServlet( asyncSupported = true, urlPatterns = "/api/productos" )
-public class ProductoRestController extends HttpServlet        
+public class ProductoRestController extends HttpServlet     
+        
+       // private ServicioProductoSingleton servPro;
 {
     @Override
     protected void doGet(HttpServletRequest request, 
