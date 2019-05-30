@@ -12,15 +12,20 @@ public class ServicioProductoSingleton {
     
     public void insertar(Producto p) {
         listaProductos.add(p);
+        //listaProductos.toString();
     }
+    
     public Producto modificar(Producto p) {
-        p.setNombre(p.getNombre() + " - Modificado");
+        p.setNombre(p.getNombre() + " - NUEVO NOMBRE");
         p.setPrecio(p.getPrecio()+ " - Modificado");
         return p;
     }
-    public Producto[] obtenerTodos() {
-        return (Producto[]) listaProductos.toArray();
+    public ArrayList<Producto> obtenerTodos() {
+        
+        return  listaProductos;
+  
     }
+    
     // La única instancia es privada.
     private static ServicioProductoSingleton instancia = null;    
     // Nadie puede hacer new excepto dentro de esta clase.
