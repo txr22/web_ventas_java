@@ -21,5 +21,14 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< .mine
 /AplicacionWebVentas/WebProductosREST/nbproject/private/
+=======
+/AplicacionWebVentas/WebVentas/nbproject/private/
+>>>>>>> .theirs
 /AplicacionWebVentas/WebProductosREST/build/
+<<<<<<< .mine
+
+=======
+/AplicacionWebVentas/WebProductosREST/build/
+>>>>>>> .theirs
