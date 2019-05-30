@@ -28,8 +28,7 @@ public class ServicioProductoSingleton {
     private ServicioProductoSingleton() {
        this.listaProductos = new ArrayList<>();
     }
-    // La primera vez que se llama al método, se crea la instancia
-    // A partir de ese momento hasta que la aplicación termine,
+    // La primera vez que se llama al método, se crea la instancia A partir de ese momento hasta que la aplicación termine,
     // la instancia seguirá "viva" y es devuelta por el método, 
     // venga de donde venga la llamada.
     public static ServicioProductoSingleton getInstancia() {

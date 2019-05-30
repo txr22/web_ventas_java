@@ -15,6 +15,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet( asyncSupported = true, urlPatterns = "/api/productos" )
 public class ProductoRestController extends HttpServlet        
 {
+     private ServicioProductoSingleton servProd;
+     
+     @Override
+     public void init(){
+         servProd = ServicioProductoSingleton.getInstancia();
+     }
+    
     @Override
     protected void doGet(HttpServletRequest request, 
             HttpServletResponse response)
@@ -43,8 +50,9 @@ public class ProductoRestController extends HttpServlet
         
         /*producto.setNombre(producto.getNombre().toUpperCase());
         producto.setPrecio("5000 bolivares");*/
-        ServicioProductoSingleton sps = ServicioProductoSingleton.getInstancia(); 
-        sps.modificar(producto);
+        //ServicioProductoSingleton sps = ServicioProductoSingleton.getInstancia(); 
+        
+       servProd.modificar(producto);
         
         String jsonRespuesta = gson.toJson(producto);
         escritorRespuesta.println(jsonRespuesta);
