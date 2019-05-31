@@ -16,8 +16,8 @@ public class ServicioProductoSingleton {
     }
     
     public Producto modificar(Producto p) {
-        p.setNombre(p.getNombre() + " - NUEVO NOMBRE");
-        p.setPrecio(p.getPrecio()+ " - Modificado");
+        p.setNombre(p.getNombre() + " - Modificando nombre");
+        p.setPrecio(p.getPrecio()+ " - Modificando nombre ");
         return p;
     }
     public ArrayList<Producto> obtenerTodos() {
