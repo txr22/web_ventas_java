@@ -115,10 +115,8 @@ public class ProductoRestController extends HttpServlet
         ArrayList<Producto> nuevosProductos = servProd.obtenerTodos();
         Gson gson = new Gson();
         
-        JsonArray ultimoJson = new JsonArray();
+       // JsonArray ultimoJson = new JsonArray();
         
-        
-            
         //servProd.obtenerTodos();
         
         //DEVOLVER LA RESPUESTA
