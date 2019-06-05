@@ -1,3 +1,30 @@
-<p>
-  formulario works!
-</p>
+<!-- <div class="container">
+  <div class="jumbotron">
+    <h2>Insertar producto</h2>
+    <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+      <div class="form-group">
+        <label>Nombre: </label>
+        <input type="text" class="form-control" placeholder="nombre" #firstName="ngModel" name="firstName"
+          [(ngModel)]="user.firstName" required
+          pattern="[a-z0-9._%+-]{3,}@[a-z]{3,}([.]{1}[a-z]{2,}|[.]{1}[a-z]{2,}[.]{1}[a-z]{2,})">
+        <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">First name is required</div>
+      </div>
+      <div class="form-group">
+        <label>Precio: </label>
+        <input type="text" class="form-control" placeholder="precio" #lastName="ngModel" name="lastName"
+          [(ngModel)]="user.lastName" required>
+        <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">Last name is required</div>
+      </div>
+      <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button>
+
+   
+ </form>
+    <label for="typeahead-basic">Search for a state:</label>
+    <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" />
+    <hr>
+  </div>
+
+</div> -->
+
+
+<p>PRUEBA DE FORMULARIO</p>
