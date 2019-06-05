@@ -92,7 +92,7 @@ public class ProductoRestController extends HttpServlet
         
         System.out.println(">>>> " + producto.getNombre());
 
-        producto.setNombre("ulalaaaaa");
+        //producto.setNombre("ulalaaaaa");
         
         producto.setNombre(producto.getNombre().toUpperCase());
         
@@ -117,16 +117,12 @@ public class ProductoRestController extends HttpServlet
         
         JsonArray ultimoJson = new JsonArray();
         
-        for(Producto pr : nuevosProductos){
         
-             ultimoJson.add("{ \n [ \""   +pr.getNombre() +"\" : \""+ pr.getPrecio()+ "\" \n ] \n }");
-                
-        }
             
         //servProd.obtenerTodos();
         
         //DEVOLVER LA RESPUESTA
-        String jsonRespuesta = gson.toJson(ultimoJson);
+        String jsonRespuesta = gson.toJson(nuevosProductos);
         escritorRespuesta.println(jsonRespuesta);
         
     }
